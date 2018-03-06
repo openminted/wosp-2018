@@ -26,18 +26,19 @@
 
 
 \abstract{
-Each article must include an abstract of 150 to 200 words in Times New Roman
-9 with interlinear spacing of 10 pt. The heading Abstract should be
-centred, font Times New Roman 10 bold. This short abstract will also be used
-for producing the Booklet of Abstracts (PDF) containing the abstracts of all
-papers presented at the Conference. \\ \newline \Keywords{keyword1, keyword2,
-keyword3} }
+The OpenMinTeD platform aims to brnig together open-access content from a wide range of publisher and text mining tools from numerous existing natural language processing frameworks in a seamless environment to enable those with little text mining experiance to access the wealth of information locked away in the vast sea of published free-text material.\\ \newline \Keywords{text mining, open access, corpora, natural language processing}}
 
 \begin{document}
 
 \maketitleabstract
 
-\section{Extended Abstract}
+\section{Introduction}
+
+\input{corpora.tex}
+
+\input{workflows.tex}
+
+\input{platform.tex}
 
 %\begin{itemize}
 %    \item{Compile the \texttt{.tex} file once}
@@ -51,12 +52,12 @@ keyword3} }
 \label{main:ref}
 
 \bibliographystyle{lrec}
-%\bibliography{references}
+\bibliography{references}
 
 
-\section{Language Resource References}
-\label{lr:ref}
-\bibliographystylelanguageresource{lrec}
+%\section{Language Resource References}
+%\label{lr:ref}
+%\bibliographystylelanguageresource{lrec}
 %\bibliographylanguageresource{references}
 
 \end{document}
