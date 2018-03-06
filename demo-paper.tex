@@ -1,0 +1,62 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{lrec}
+\usepackage{multibib}
+\newcites{languageresource}{Language Resources}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{soul}
+% for eps graphics
+
+\usepackage{epstopdf}
+\usepackage[latin1]{inputenc}
+
+\usepackage{hyperref}
+\usepackage{xstring}
+
+\newcommand{\secref}[1]{\StrSubstitute{\getrefnumber{#1}}{.}{ }}
+
+\title{OpenMinTeD: Facilitating Large Scale Text Mining of Open Access Corpora}
+
+\name{Author1, Author2, Author3}
+
+\address{Affiliation1, Affiliation2, Affiliation3 \\
+         Address1, Address2, Address3 \\
+         author1@xxx.yy, author2@zzz.edu, author3@hhh.com\\
+         \{author1, author5, author9\}@abc.org\\}
+
+
+\abstract{
+Each article must include an abstract of 150 to 200 words in Times New Roman
+9 with interlinear spacing of 10 pt. The heading Abstract should be
+centred, font Times New Roman 10 bold. This short abstract will also be used
+for producing the Booklet of Abstracts (PDF) containing the abstracts of all
+papers presented at the Conference. \\ \newline \Keywords{keyword1, keyword2,
+keyword3} }
+
+\begin{document}
+
+\maketitleabstract
+
+\section{Extended Abstract}
+
+%\begin{itemize}
+%    \item{Compile the \texttt{.tex} file once}
+%    \item{Invoke \texttt{bibtex} on the eponymous \texttt{.aux} file}
+%    \item{Invoke \texttt{bibtex} on the \texttt{languageresources.aux} file}
+%    \item{Compile the \texttt{.tex} file twice}
+%\end{itemize}
+
+%\nocite{*}
+\section{Bibliographical References}
+\label{main:ref}
+
+\bibliographystyle{lrec}
+%\bibliography{references}
+
+
+\section{Language Resource References}
+\label{lr:ref}
+\bibliographystylelanguageresource{lrec}
+%\bibliographylanguageresource{references}
+
+\end{document}
